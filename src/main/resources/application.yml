@@ -1,0 +1,12 @@
+server:
+  port: 8282
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/my_profil
+    username: credit
+    password: credit_ms
+  jpa:
+    show-sql: true
+    open-in-view: false
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.yml
